@@ -12,6 +12,8 @@ dotenv.config();
 
 const { MONGO_USERNAME, MONGO_PASSWORD } = process.env;
 
-mongoose.connect(`mongodb+srv://${MONGO_USERNAME}:${MONGO_PASSWORD}@recipes.g8yqers.mongodb.net/recipes?retryWrites=true&w=majority`)
+mongoose.connect(
+  `mongodb+srv://${MONGO_USERNAME}:${MONGO_PASSWORD}@recipes.g8yqers.mongodb.net/recipes?retryWrites=true&w=majority`
+);
 
-app.listen(3300, () => console.log("Server started."))
+app.listen(3300, () => console.log("Server started."));
